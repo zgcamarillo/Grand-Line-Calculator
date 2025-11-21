@@ -9,45 +9,55 @@
 </head>
 <body>
     <header>
-        <h1>Grand Line Calculator</h1>
-        <nav class="tabletDesktopNav">
-            <ul>
-                <li>Calculate</li>
-                <li>Watch One Piece</li>
-                <li>FAQ</li>
-                <li>Meet the Crew Members</li>
+        <nav>
+            <div class="logo" id="navLogo">
+                <img src="emblem.png" alt="One Piece Emblem">
+            </div>
+            <h1>Grand Line Calculator</h1>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            <ul  class="tabletDesktopNav">
+                <li><a href="Calculator.html">Calculator</a></li>
+                <li><a href="https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece?utm_campaign=media_actions&utm_medium=deep_link&utm_source=google">Watch One Piece</a></li>
+                <li><a href="">Meet The Crew Members</a></li>
+                <li><a href="">FAQ</a></li>
             </ul>
+            <div class="curtain" id="mobileCurtain">
+                <nav class="curtain-menu">
+                    <a href="Calculator.html">Calculate</a>
+                    <a href="https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece?utm_campaign=media_actions&utm_medium=deep_link&utm_source=google">Watch One Piece</a>
+                    <a href="">Meet the Crew Members</a>
+                    <a href="">FAQ</a>
+                </nav>
         </nav>
-        <nav class="mobileNav">
-            <
-        </nav>
-
     </header>
-    <h1>Calculate How Many Berries You Have</h1>
-    <div class="calculator">
-        <div class="display"></div>
-        <div class="buttons">
-            <div class="operation" id="backspace"></div>
-            <div class="operation" id="clear"></div>
-            <div class="operation">%</div>
-            <div class="operation"></div>
-            <div class="number">7</div>
-            <div class="number">8</div>
-            <div class="number">9</div>
-            <div class="operation"></div>
-            <div class="number">4</div>
-            <div class="number">5</div>
-            <div class="number">6</div>
-            <div class="operation">-</div>
-            <div class="number">1</div>
-            <div class="number">2</div>
-            <div class="number">3</div>
-            <div class="operation">+</div>
-            <div class="operation"></div>
-            <div class="number">0</div>
-            <div class="operation">.</div>
-            <div class="equal">=</div>
+    <h2>Calculate How Many Berries You Have</h2>
+    <div class="calc-wrapper">
+        <div class="calculator">
+            <div class="display"></div>
+            <div class="buttons">
+                <div class="operation" id="backspace">&#8656</div>
+                <div class="operation" id="clear">AC</div>
+                <div class="operation" id="percentage">%</div>
+                <div class="operation" id="rightColumnBtn">&#247</div>
+                <div class="number">7</div>
+                <div class="number">8</div>
+                <div class="number">9</div>
+                <div class="operation" id="rightColumnBtn">x</div>
+                <div class="number">4</div>
+                <div class="number">5</div>
+                <div class="number">6</div>
+                <div class="operation" id="rightColumnBtn">-</div>
+                <div class="number">1</div>
+                <div class="number">2</div>
+                <div class="number">3</div>
+                <div class="operation" id="rightColumnBtn">+</div>
+                <div class="operation" id="plusmn">&plusmn</div>
+                <div class="number">0</div>
+                <div class="operation" id="decimal">.</div>
+                <div class="equal">=</div>
 
+            </div>
         </div>
     </div>
     <script src="Calculator.js"></script>
