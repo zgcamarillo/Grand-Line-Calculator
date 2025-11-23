@@ -52,12 +52,17 @@ document.querySelectorAll(".number").forEach(btn =>
         }
         
         //prevents repeating decimal
-        if (value === "." && currentInput.includes(".")) return;
+        if (value === "." && currentInput === "") {
+            currentInput = "0.";
+        } else if (value === "." && currentInput.includes(".")) {
+            return;
+        }
         //no digit overflow
-        if (currentInput.length >= MAX_DIGITS) return;
-
-        //adding values to the strings
-        currentInput += value;
+         else if (currentInput.length >= MAX_DIGITS) {
+            return;
+        } else { //adding value to the string
+            currentInput += value;
+        }
         //updating display 
         updateDisplay();
     });
